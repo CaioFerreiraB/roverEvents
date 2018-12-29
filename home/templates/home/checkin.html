@@ -98,4 +98,17 @@
 			<button class="btn btn-primary mb-4" type="submit">Enviar</button>
 		</form>
 
+
+		<script src="{% static 'node_modules/bs-custom-file-input/dist/bs-custom-file-input.js' %}"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				bsCustomFileInput.init()
+				var btn = document.getElementById('btnResetForm')
+				var form = document.querySelector('form')
+				btn.addEventListener('click', function () {
+					form.reset()
+				})
+			});
+		</script>
+
 {% endblock %}

@@ -30,6 +30,27 @@
 			html {
 			  scroll-behavior: smooth;
 			}
+			// support custom file inputs
+			.custom-file-name:after {
+				content: attr(data-content) !important;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				display: block;
+				height: 100%;
+				overflow: hidden;
+				padding: 0.5rem 1rem;
+			}
+			.custom-file-name:before {
+				content: attr(data-content) !important;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				display: block;
+				height: 100%;
+				overflow: hidden;
+				padding: 0.5rem 1rem;
+			}
 		</style>
 		
 
