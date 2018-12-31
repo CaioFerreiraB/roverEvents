@@ -48,4 +48,4 @@ def submit(request):
 		#salva o participante no banco de dados
 		participante = Participante(nome=nome_part, idade=idade_part, email=email_part, grupo=grupo, ficha_medica=ficha_medica, autorizacao=autorizacao)
 		participante.save()
-	return render(request, 'home/checkin.html')
+	return render(request, 'home/agradecimento.html')
