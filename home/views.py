@@ -33,12 +33,9 @@ def submit(request):
 		print(ficha_medica)
 
 		#salva o grupo no banco de dados
-		print('---------------------------------------------------------------')
 		try:
-			print('try')
 			grupo = Grupo.objects.get(nome=nome_grupo, numeral=numeral_grupo, estado=estado_grupo)
 		except Grupo.DoesNotExist:
-			print('entrou aqui')
 			grupo = None
 
 		if grupo is None:
