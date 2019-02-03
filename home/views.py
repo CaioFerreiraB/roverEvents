@@ -12,6 +12,9 @@ def envolvidos(request):
 def checkin(request):
 	return render(request, 'home/checkin.html')
 
+def pre_checkin(request):
+	return render(request, 'home/pre_checkin.html')
+
 def submit(request):
 	if request.method == "POST":
 		print(request.FILES)
