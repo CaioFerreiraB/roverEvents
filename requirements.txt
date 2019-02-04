@@ -3,3 +3,5 @@ gunicorn
 django-heroku
 requests==2.20.0
 PyPDF2
+psycopg2-binary
+dj-database-url
