@@ -3,19 +3,11 @@ from .forms import SubmitForm
 from home.models import Grupo, Participante, Boletim
 
 import io
-from django.http import FileResponse
-from reportlab.pdfgen import canvas
+from PyPDF2 import PdfFileWriter, PdfFileReader
+from django.http import FileResponse, Http404
 
 # Create your views here.
 
-import io
-from django.http import FileResponse
-from reportlab.pdfgen import canvas
-from io import BytesIO
-from django.http import HttpResponse
-from PyPDF2 import PdfFileWriter, PdfFileReader
-
-from django.http import FileResponse, Http404
 
 def pdf_view(request, boletim_numero):
 	boletim = Boletim.objects.get(numero=boletim_numero)
