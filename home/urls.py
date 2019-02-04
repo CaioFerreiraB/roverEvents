@@ -22,4 +22,5 @@ urlpatterns = [
     path('checkin/', views.checkin, name='checkin'),
     path('pre_checkin/', views.pre_checkin, name='pre_checkin'),
     path('checkin/submit/', views.submit, name='submit'),
+    path('pdf_view/<int:boletim_numero>/', views.pdf_view, name='pdf_view'),
 ]

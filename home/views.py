@@ -1,10 +1,38 @@
 from django.shortcuts import render
 from .forms import SubmitForm 
-from home.models import Grupo, Participante
+from home.models import Grupo, Participante, Boletim
+
+import io
+from django.http import FileResponse
+from reportlab.pdfgen import canvas
 
 # Create your views here.
+
+import io
+from django.http import FileResponse
+from reportlab.pdfgen import canvas
+from io import BytesIO
+from django.http import HttpResponse
+from PyPDF2 import PdfFileWriter, PdfFileReader
+
+from django.http import FileResponse, Http404
+
+def pdf_view(request, boletim_numero):
+	boletim = Boletim.objects.get(numero=boletim_numero)
+	url = boletim.arquivo.url
+	url = url[1:]
+	try:
+		return FileResponse(open(url, 'rb'), content_type='application/pdf')
+	except FileNotFoundError:
+		raise Http404()
+
+
 def index(request):
-	return render(request, 'home/home.html')
+	boletins = Boletim.objects.all()
+
+	args = {'boletins': boletins}
+
+	return render(request, 'home/home.html', args)
 
 def envolvidos(request):
 	return render(request, 'home/envolvidos.html')

@@ -13,11 +13,7 @@
 			<div class="carousel-inner">
 
 				<div class="carousel-item active">
-					<img src="{% static 'img/Capa_Facebook_Evento_EcoCult.png' %}" class="d-block w-100">	
-					<div class="carousel-caption">
-						<h3>AAAAAAAAAAAAAAAA</h3>
-						<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-					</div>				
+					<img src="{% static 'img/Capa_Facebook_Evento_EcoCult.png' %}" class="d-block w-100">					
 				</div>
 
 				<div class="carousel-item">
@@ -74,6 +70,30 @@
 			<!--Google map-->
 			<div id="map-container" class="z-depth-1-half map-container mb-5" style="height: 400px"></div>
 				
+			</div>
+		</div>
+
+		<!-- Boletins -->
+		<div class="container" id="boletins">			
+			<div>
+				<h1 class="display-4">Boletins</h1>
+				{% for boletim in boletins %}
+				<div class="container">
+					<div class="row text-left">
+						<div class="col-md-4 mb-3">
+							<img src="{{boletim.capa.url}}" class="img-fluid" style="width: 60%; height: auto;">
+						</div>
+						<div class="col-md-4 mb-3">
+							<p class="lead">{{ boletim.resumo }}</p>
+						</div>
+						<div class="col-md-4 mb-3">
+							<a class="nav-link" href="/pdf_view/{{boletim.numero}}">
+								<p class="lead">Abrir<i class="fas fa-arrow-circle-down ml-2 align-middle"></i></p>
+							</a>
+						</div>
+					</div>
+				</div>
+				{% endfor %}				
 			</div>
 		</div>
 

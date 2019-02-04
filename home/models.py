@@ -27,3 +27,14 @@ class Participante(models.Model):
 
 	def __str__(self):
 		return self.nome + '	(' + self.grupo.nome + ' - ' + str(self.grupo.numeral) + ' - ' + self.grupo.estado + ')'
+
+class Boletim(models.Model):
+	numero = models.IntegerField(primary_key=True)
+	arquivo = models.FileField()
+	capa = models.FileField()
+	resumo = models.TextField(default='resumo')
+
+	def __str__(self):
+		return 'Boletim	-	' + str(self.numero)
+
+
