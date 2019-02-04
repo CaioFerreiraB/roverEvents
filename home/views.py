@@ -13,6 +13,7 @@ def pdf_view(request, boletim_numero):
 	boletim = Boletim.objects.get(numero=boletim_numero)
 	url = boletim.arquivo.url
 	url = url[1:]
+	print(url)
 	try:
 		return FileResponse(open(url, 'rb'), content_type='application/pdf')
 	except FileNotFoundError:
@@ -23,6 +24,10 @@ def index(request):
 	boletins = Boletim.objects.all()
 
 	args = {'boletins': boletins}
+	for boletim in boletins:
+		capa = boletim.capa.url[1:] 
+		print(boletim.capa.url)
+		print(capa)
 
 	return render(request, 'home/home.html', args)
 
