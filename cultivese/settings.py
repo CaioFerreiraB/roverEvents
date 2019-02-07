@@ -24,14 +24,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #SECRET_KEY = '5pot4srj8^()x370+(@wx!m8#bs3-ckfd1jxmm^mzr2x!qs+qi'
 #### ADD FOR PRODUCTION--------------------------------------------------
 import os
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '5pot4srj8^()x370+(@wx!m8#bs3-ckfd1jxmm^mzr2x!qs+qi')
 #------------------------------------------------------------------------
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True   
 #### ADD FOR PRODUCTION--------------------------------------------------
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = False   
+#DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 #------------------------------------------------------------------------
 
 ALLOWED_HOSTS = ['cultivese.herokuapp.com', '127.0.0.1']
@@ -130,6 +130,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'home/static'),
+)
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
