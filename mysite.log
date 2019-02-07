@@ -1,199 +1,53 @@
-[07/Feb/2019 19:32:31] ERROR [django.request:228] Internal Server Error: /
-Traceback (most recent call last):
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
-    response = get_response(request)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\caiof\Desktop\roverEvents\home\views.py", line 32, in index
-    return render(request, 'home/home.html', args)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\shortcuts.py", line 36, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\loader.py", line 62, in render_to_string
-    return template.render(context, request)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\backends\django.py", line 61, in render
-    return self.template.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 171, in render
-    return self._render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 937, in render
-    bit = node.render_annotated(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 904, in render_annotated
-    return self.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\loader_tags.py", line 150, in render
-    return compiled_parent._render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 937, in render
-    bit = node.render_annotated(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 904, in render_annotated
-    return self.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\templatetags\static.py", line 106, in render
-    url = self.url(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\templatetags\static.py", line 103, in url
-    return self.handle_simple(path)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
-    return staticfiles_storage.url(path)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
-    return self._url(self.stored_name, name, force)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
-    hashed_name = hashed_name_func(*args)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\staticfiles\storage.py", line 419, in stored_name
-    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
-ValueError: Missing staticfiles manifest entry for 'node_modules/bootstrap/compiler/style.css'
-[07/Feb/2019 19:32:31] ERROR [django.server:136] "GET / HTTP/1.1" 500 27
-[07/Feb/2019 19:46:32] ERROR [django.request:228] Internal Server Error: /
-Traceback (most recent call last):
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
-    response = get_response(request)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\caiof\Desktop\roverEvents\home\views.py", line 32, in index
-    return render(request, 'home/home.html', args)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\shortcuts.py", line 36, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\loader.py", line 62, in render_to_string
-    return template.render(context, request)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\backends\django.py", line 61, in render
-    return self.template.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 171, in render
-    return self._render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 937, in render
-    bit = node.render_annotated(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 904, in render_annotated
-    return self.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\loader_tags.py", line 150, in render
-    return compiled_parent._render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 937, in render
-    bit = node.render_annotated(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 904, in render_annotated
-    return self.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\templatetags\static.py", line 106, in render
-    url = self.url(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\templatetags\static.py", line 103, in url
-    return self.handle_simple(path)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
-    return staticfiles_storage.url(path)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
-    return self._url(self.stored_name, name, force)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
-    hashed_name = hashed_name_func(*args)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\staticfiles\storage.py", line 419, in stored_name
-    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
-ValueError: Missing staticfiles manifest entry for 'node_modules/bootstrap/compiler/style.css'
-[07/Feb/2019 19:46:32] ERROR [django.server:136] "GET / HTTP/1.1" 500 27
-[07/Feb/2019 19:47:58] ERROR [django.request:228] Internal Server Error: /
-Traceback (most recent call last):
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
-    response = get_response(request)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\caiof\Desktop\roverEvents\home\views.py", line 32, in index
-    return render(request, 'home/home.html', args)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\shortcuts.py", line 36, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\loader.py", line 62, in render_to_string
-    return template.render(context, request)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\backends\django.py", line 61, in render
-    return self.template.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 171, in render
-    return self._render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 937, in render
-    bit = node.render_annotated(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 904, in render_annotated
-    return self.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\loader_tags.py", line 150, in render
-    return compiled_parent._render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 937, in render
-    bit = node.render_annotated(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 904, in render_annotated
-    return self.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\templatetags\static.py", line 106, in render
-    url = self.url(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\templatetags\static.py", line 103, in url
-    return self.handle_simple(path)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
-    return staticfiles_storage.url(path)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
-    return self._url(self.stored_name, name, force)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
-    hashed_name = hashed_name_func(*args)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\staticfiles\storage.py", line 419, in stored_name
-    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
-ValueError: Missing staticfiles manifest entry for 'node_modules/bootstrap/compiler/style.css'
-[07/Feb/2019 19:47:58] ERROR [django.server:136] "GET / HTTP/1.1" 500 27
-[07/Feb/2019 19:49:12] ERROR [django.request:228] Internal Server Error: /
-Traceback (most recent call last):
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
-    response = get_response(request)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\caiof\Desktop\roverEvents\home\views.py", line 32, in index
-    return render(request, 'home/home.html', args)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\shortcuts.py", line 36, in render
-    content = loader.render_to_string(template_name, context, request, using=using)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\loader.py", line 62, in render_to_string
-    return template.render(context, request)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\backends\django.py", line 61, in render
-    return self.template.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 171, in render
-    return self._render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 937, in render
-    bit = node.render_annotated(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 904, in render_annotated
-    return self.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\loader_tags.py", line 150, in render
-    return compiled_parent._render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 163, in _render
-    return self.nodelist.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 937, in render
-    bit = node.render_annotated(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\template\base.py", line 904, in render_annotated
-    return self.render(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\templatetags\static.py", line 106, in render
-    url = self.url(context)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\templatetags\static.py", line 103, in url
-    return self.handle_simple(path)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\templatetags\static.py", line 118, in handle_simple
-    return staticfiles_storage.url(path)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\staticfiles\storage.py", line 152, in url
-    return self._url(self.stored_name, name, force)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\staticfiles\storage.py", line 131, in _url
-    hashed_name = hashed_name_func(*args)
-  File "C:\Users\caiof\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\staticfiles\storage.py", line 419, in stored_name
-    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
-ValueError: Missing staticfiles manifest entry for 'node_modules/bootstrap/compiler/style.css'
-[07/Feb/2019 19:49:12] ERROR [django.server:136] "GET / HTTP/1.1" 500 27
-[07/Feb/2019 19:50:06] INFO [django.server:136] "GET / HTTP/1.1" 200 15809
-[07/Feb/2019 19:50:06] INFO [django.server:136] "GET /static/node_modules/bootstrap/compiler/bootstrap.a44a4b2594a4.css HTTP/1.1" 200 21865
-[07/Feb/2019 19:50:06] INFO [django.server:136] "GET /static/img/nome_branco.552241b90010.png HTTP/1.1" 200 1778
-[07/Feb/2019 19:50:06] INFO [django.server:136] "GET /static/img/Capa_Facebook_Evento_EcoCult.31a2aa69868c.png HTTP/1.1" 200 150584
-[07/Feb/2019 19:50:07] INFO [django.server:136] "GET /static/node_modules/jquery/dist/jquery.6a07da9fae93.js HTTP/1.1" 200 80268
-[07/Feb/2019 19:50:07] INFO [django.server:136] "GET /static/node_modules/popper.js/dist/umd/popper.7701a569bf44.js HTTP/1.1" 200 22230
-[07/Feb/2019 19:50:07] INFO [django.server:136] "GET /static/node_modules/bootstrap/dist/js/bootstrap.4bc939cd6b79.js HTTP/1.1" 200 20647
-[07/Feb/2019 19:50:07] INFO [django.server:136] "GET /static/img/organizacao.d92a5316261d.jpg HTTP/1.1" 200 131779
-[07/Feb/2019 19:50:07] INFO [django.server:136] "GET /static/img/gu.38e224a0bb0c.jpg HTTP/1.1" 200 67751
-[07/Feb/2019 19:50:07] INFO [django.server:136] "GET /static/img/Logo_Completo_Cultive-se.ea5a3df0ae67.png HTTP/1.1" 200 464052
-[07/Feb/2019 19:50:07] INFO [django.server:136] "GET /static/img/tiba.b260ca401d76.jpg HTTP/1.1" 200 71638
-[07/Feb/2019 19:50:07] INFO [django.server:136] "GET /static/img/logo_UEB.bdc154bfb61f.png HTTP/1.1" 200 23059
-[07/Feb/2019 19:50:07] INFO [django.server:136] "GET /static/img/santa_helena.87845d32aefb.jpg HTTP/1.1" 200 11361
-[07/Feb/2019 19:50:08] INFO [django.server:136] "GET /static/img/invernada.384db12cbf8d.jpg HTTP/1.1" 200 4197787
-[07/Feb/2019 19:50:09] INFO [django.server:136] "GET /static/img/fav.3b48631b3564.png HTTP/1.1" 200 877
+[07/Feb/2019 20:11:09] INFO [django.server:136] "GET / HTTP/1.1" 200 16310
+[07/Feb/2019 20:11:09] WARNING [django.request:228] Not Found: /media/rep.jpg
+[07/Feb/2019 20:11:09] WARNING [django.server:136] "GET /media/rep.jpg HTTP/1.1" 404 87
+[07/Feb/2019 20:11:10] INFO [django.server:136] "GET /static/img/fav.3b48631b3564.png HTTP/1.1" 200 877
+[07/Feb/2019 20:11:39] INFO [django.server:136] "GET /admin/home/boletim/3/change/ HTTP/1.1" 200 6032
+[07/Feb/2019 20:11:39] INFO [django.server:136] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[07/Feb/2019 20:11:44] WARNING [django.request:228] Not Found: /media/adult_information_form_Nov_2014_-_editable_1.pdf
+[07/Feb/2019 20:11:44] WARNING [django.server:136] "GET /media/adult_information_form_Nov_2014_-_editable_1.pdf HTTP/1.1" 404 128
+[07/Feb/2019 20:14:50] DEBUG [django.db.backends:111] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Feb/2019 20:14:50] DEBUG [django.db.backends:111] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Feb/2019 20:14:53] INFO [django.server:136] "GET /media/adult_information_form_Nov_2014_-_editable_1.pdf HTTP/1.1" 200 170530
+[07/Feb/2019 20:15:07] DEBUG [django.db.backends:111] (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-02-07 20:15:07.030889' AND "django_session"."session_key" = 'qddfv0xl7nu74zmvd9hcn8i2ga0m1oau'); args=('2019-02-07 20:15:07.030889', 'qddfv0xl7nu74zmvd9hcn8i2ga0m1oau')
+[07/Feb/2019 20:15:07] DEBUG [django.db.backends:111] (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+[07/Feb/2019 20:15:07] DEBUG [django.db.backends:111] (0.000) BEGIN; args=None
+[07/Feb/2019 20:15:07] DEBUG [django.db.backends:111] (0.001) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim" WHERE "home_boletim"."numero" = 3; args=(3,)
+[07/Feb/2019 20:15:07] DEBUG [django.db.backends:111] (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'home' AND "django_content_type"."model" = 'boletim'); args=('home', 'boletim')
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /admin/home/boletim/3/change/ HTTP/1.1" 200 5847
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /static/admin/css/base.css HTTP/1.1" 200 16225
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /static/admin/css/forms.css HTTP/1.1" 200 8505
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271751
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /static/admin/js/core.js HTTP/1.1" 200 7135
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17976
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8972
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /static/admin/js/actions.js HTTP/1.1" 200 6538
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[07/Feb/2019 20:15:07] INFO [django.server:136] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[07/Feb/2019 20:15:08] INFO [django.server:136] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[07/Feb/2019 20:15:08] INFO [django.server:136] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[07/Feb/2019 20:15:08] INFO [django.server:136] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[07/Feb/2019 20:18:24] DEBUG [django.db.backends:111] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Feb/2019 20:18:24] DEBUG [django.db.backends:111] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Feb/2019 20:23:41] DEBUG [django.db.backends:111] (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Feb/2019 20:23:41] DEBUG [django.db.backends:111] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[07/Feb/2019 20:23:48] DEBUG [django.db.backends:111] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[07/Feb/2019 20:23:48] DEBUG [django.db.backends:111] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()

@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '5pot4srj8^()x370+(@wx!m8#bs3-c
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #### ADD FOR PRODUCTION--------------------------------------------------
-DEBUG = False   
+DEBUG = True   
 #DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 #------------------------------------------------------------------------
 
@@ -135,7 +135,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'home/static'),
 )
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 MEDIA_URL = '/media/'
 
 django_heroku.settings(locals())
@@ -148,9 +148,7 @@ DATABASES['default'].update(db_from_env)
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
-
-django_heroku.settings(locals())
+#COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
 
 LOGGING = {
     'version': 1,
