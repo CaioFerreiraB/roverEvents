@@ -30,8 +30,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '5pot4srj8^()x370+(@wx!m8#bs3-c
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #### ADD FOR PRODUCTION--------------------------------------------------
-DEBUG = True   
-#DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+#DEBUG = True   
+DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 #------------------------------------------------------------------------
 
 ALLOWED_HOSTS = ['cultivese.herokuapp.com', '127.0.0.1']
