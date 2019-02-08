@@ -135,10 +135,10 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'home/static'),
 )
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
 
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
