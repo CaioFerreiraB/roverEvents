@@ -78,3 +78,145 @@
 [08/Feb/2019 14:44:40] INFO [django.server:136] "GET / HTTP/1.1" 200 15130
 [08/Feb/2019 14:44:45] INFO [django.server:136] "GET /envolvidos/ HTTP/1.1" 200 14413
 [08/Feb/2019 14:44:47] INFO [django.server:136] "GET /static/img/caio_recorte.jpg HTTP/1.1" 304 0
+[08/Feb/2019 15:45:03] DEBUG [django.db.backends:111] (0.020) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[08/Feb/2019 15:45:03] DEBUG [django.db.backends:111] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[08/Feb/2019 15:45:20] DEBUG [django.db.backends:111] (0.034) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 15:45:21] INFO [django.server:136] "GET / HTTP/1.1" 200 15301
+[08/Feb/2019 15:45:22] INFO [django.server:136] "GET /static/img/nome_branco.png HTTP/1.1" 200 1778
+[08/Feb/2019 15:45:22] INFO [django.server:136] "GET /static/img/Capa_Facebook_Evento_EcoCult.png HTTP/1.1" 200 150584
+[08/Feb/2019 15:45:22] INFO [django.server:136] "GET /static/node_modules/bootstrap/compiler/bootstrap.css HTTP/1.1" 200 157083
+[08/Feb/2019 15:45:24] INFO [django.server:136] "GET /static/img/Logo_Completo_Cultive-se.png HTTP/1.1" 200 464052
+[08/Feb/2019 15:45:24] INFO [django.server:136] "GET /static/img/gu.jpg HTTP/1.1" 200 67751
+[08/Feb/2019 15:45:24] INFO [django.server:136] "GET /static/node_modules/popper.js/dist/umd/popper.js HTTP/1.1" 200 87009
+[08/Feb/2019 15:45:24] INFO [django.server:136] "GET /static/img/organizacao.jpg HTTP/1.1" 200 131779
+[08/Feb/2019 15:45:24] INFO [django.server:136] "GET /static/img/santa_helena.jpg HTTP/1.1" 200 11361
+[08/Feb/2019 15:45:24] INFO [django.server:136] "GET /static/node_modules/bootstrap/dist/js/bootstrap.js HTTP/1.1" 200 123765
+[08/Feb/2019 15:45:25] INFO [django.server:136] "GET /static/img/logo_UEB.png HTTP/1.1" 200 23059
+[08/Feb/2019 15:45:25] INFO [django.server:136] "GET /static/img/tiba.jpg HTTP/1.1" 200 71638
+[08/Feb/2019 15:45:25] INFO [django.server:136] "GET /media/Logo_Bacury_Colorido.png HTTP/1.1" 200 29447
+[08/Feb/2019 15:45:26] INFO [django.server:136] "GET /static/node_modules/jquery/dist/jquery.js HTTP/1.1" 200 271751
+[08/Feb/2019 15:45:27] INFO [django.server:136] "GET /static/img/invernada.jpg HTTP/1.1" 200 4197787
+[08/Feb/2019 15:45:32] INFO [django.server:136] "GET /static/node_modules/bootstrap/compiler/bootstrap.css.map HTTP/1.1" 200 42922
+[08/Feb/2019 15:45:32] INFO [django.server:136] "GET /static/node_modules/popper.js/dist/umd/popper.js.map HTTP/1.1" 200 138132
+[08/Feb/2019 15:45:33] INFO [django.server:136] "GET /static/node_modules/bootstrap/dist/js/bootstrap.js.map HTTP/1.1" 200 211967
+[08/Feb/2019 15:46:08] DEBUG [django.db.backends:111] (0.002) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 15:46:08] INFO [django.server:136] "GET / HTTP/1.1" 200 15130
+[08/Feb/2019 15:46:10] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 19:03:14] DEBUG [django.db.backends:111] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[08/Feb/2019 19:03:14] DEBUG [django.db.backends:111] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[08/Feb/2019 19:03:23] DEBUG [django.db.backends:111] (0.092) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 19:03:24] INFO [django.server:136] "GET / HTTP/1.1" 200 15899
+[08/Feb/2019 19:03:25] INFO [django.server:136] "GET /media/Logo_Bacury_Colorido.png HTTP/1.1" 304 0
+[08/Feb/2019 19:04:43] DEBUG [django.db.backends:111] (0.001) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 19:04:43] INFO [django.server:136] "GET / HTTP/1.1" 200 15926
+[08/Feb/2019 19:04:46] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 19:05:16] DEBUG [django.db.backends:111] (0.001) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 19:05:16] INFO [django.server:136] "GET / HTTP/1.1" 200 15939
+[08/Feb/2019 19:05:17] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 19:05:59] DEBUG [django.db.backends:111] (0.001) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 19:05:59] INFO [django.server:136] "GET / HTTP/1.1" 200 15939
+[08/Feb/2019 19:06:01] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 19:07:27] DEBUG [django.db.backends:111] (0.001) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 19:07:27] INFO [django.server:136] "GET / HTTP/1.1" 200 15130
+[08/Feb/2019 19:07:28] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 19:11:50] DEBUG [django.db.backends:111] (0.001) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 19:11:50] INFO [django.server:136] "GET / HTTP/1.1" 200 15663
+[08/Feb/2019 19:11:51] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 19:12:47] DEBUG [django.db.backends:111] (0.001) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 19:12:47] INFO [django.server:136] "GET / HTTP/1.1" 200 15690
+[08/Feb/2019 19:12:48] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 19:13:29] DEBUG [django.db.backends:111] (0.002) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 19:13:29] INFO [django.server:136] "GET / HTTP/1.1" 200 15700
+[08/Feb/2019 19:13:30] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 19:14:49] DEBUG [django.db.backends:111] (0.001) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 19:14:49] INFO [django.server:136] "GET / HTTP/1.1" 200 16258
+[08/Feb/2019 19:14:51] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 19:16:40] DEBUG [django.db.backends:111] (0.002) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 19:16:40] INFO [django.server:136] "GET / HTTP/1.1" 200 16192
+[08/Feb/2019 19:16:42] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 19:17:17] DEBUG [django.db.backends:111] (0.001) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 19:17:17] INFO [django.server:136] "GET / HTTP/1.1" 200 15637
+[08/Feb/2019 19:17:19] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 19:17:54] DEBUG [django.db.backends:111] (0.002) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 19:17:54] INFO [django.server:136] "GET / HTTP/1.1" 200 15637
+[08/Feb/2019 19:42:21] DEBUG [django.db.backends:111] (0.016) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 19:42:21] INFO [django.server:136] "GET / HTTP/1.1" 200 15657
+[08/Feb/2019 19:42:26] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 19:53:15] DEBUG [django.db.backends:111] (0.003) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 19:53:15] INFO [django.server:136] "GET / HTTP/1.1" 200 15660
+[08/Feb/2019 19:53:16] INFO [django.server:136] "GET /static/img/invernada.jpg HTTP/1.1" 304 0
+[08/Feb/2019 19:53:16] INFO [django.server:136] "GET /static/img/tiba.jpg HTTP/1.1" 304 0
+[08/Feb/2019 19:53:16] INFO [django.server:136] "GET /static/img/santa_helena.jpg HTTP/1.1" 304 0
+[08/Feb/2019 19:53:18] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 20:22:00] DEBUG [django.db.backends:111] (0.104) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 20:22:00] INFO [django.server:136] "GET / HTTP/1.1" 200 15660
+[08/Feb/2019 20:22:02] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 20:22:04] INFO [django.server:136] "GET /envolvidos/ HTTP/1.1" 200 15544
+[08/Feb/2019 20:22:04] INFO [django.server:136] "GET /static/img/GEISA.jpg HTTP/1.1" 200 44842
+[08/Feb/2019 20:22:04] WARNING [django.server:136] "GET /static/img/Veracidade.jpg HTTP/1.1" 404 1779
+[08/Feb/2019 20:22:04] WARNING [django.server:136] "GET /static/img/Enactus.jpg HTTP/1.1" 404 1770
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/casa_recorte.jpg HTTP/1.1" 200 54095
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/gu_ribeiro_recorte.jpg HTTP/1.1" 200 51186
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/artur_malheiros_corte.jpg HTTP/1.1" 200 47299
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/pedro_henrique_recorte.jpg HTTP/1.1" 200 43699
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/pedrao_corte.jpg HTTP/1.1" 200 46385
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/rafael_rezende_recorte.jpg HTTP/1.1" 200 42270
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/Lucas_Teixeira_recorte.jpg HTTP/1.1" 200 59325
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/Andre_Luiz_recorte.jpg HTTP/1.1" 200 44464
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/mari_fernandes_recorte.jpg HTTP/1.1" 200 54023
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/pet_recorte.jpg HTTP/1.1" 200 59905
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/julia_rodrigues_recorte.jpg HTTP/1.1" 200 57079
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/Ariane_recorte.jpg HTTP/1.1" 200 62329
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/italo_recorte.jpg HTTP/1.1" 200 42712
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/kael_recorte.jpg HTTP/1.1" 200 45369
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/marcos_bertho_recorte.jpg HTTP/1.1" 200 52266
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/Carol_recorte.jpg HTTP/1.1" 200 49295
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/Amanda_g_recorte.jpg HTTP/1.1" 200 50946
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/marcel_recorte.jpg HTTP/1.1" 200 47321
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/Anic_recorte.jpg HTTP/1.1" 200 45930
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/pedro_saletti_recorte.jpg HTTP/1.1" 200 46889
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/marli_recorte.jpg HTTP/1.1" 200 48526
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/vitor_monteiro_recorte.jpg HTTP/1.1" 200 40538
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/Jose_recorte.jpg HTTP/1.1" 200 43449
+[08/Feb/2019 20:22:05] INFO [django.server:136] "GET /static/img/caio_recorte.jpg HTTP/1.1" 200 40402
+[08/Feb/2019 20:23:02] INFO [django.server:136] "GET /envolvidos/ HTTP/1.1" 200 15544
+[08/Feb/2019 20:23:02] INFO [django.server:136] "GET /static/img/Enactus.png HTTP/1.1" 200 31555
+[08/Feb/2019 20:23:03] INFO [django.server:136] "GET /static/img/Veracidade.png HTTP/1.1" 200 45375
+[08/Feb/2019 20:23:03] INFO [django.server:136] "GET /static/img/tiba.png HTTP/1.1" 200 25781
+[08/Feb/2019 20:23:04] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 20:23:36] INFO [django.server:136] "GET /envolvidos/ HTTP/1.1" 200 15543
+[08/Feb/2019 20:23:37] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 20:24:59] INFO [django.server:136] "GET /envolvidos/ HTTP/1.1" 200 15543
+[08/Feb/2019 20:24:59] INFO [django.server:136] "GET /static/img/Veracidade.png HTTP/1.1" 304 0
+[08/Feb/2019 20:24:59] INFO [django.server:136] "GET /static/img/Enactus.png HTTP/1.1" 304 0
+[08/Feb/2019 20:24:59] INFO [django.server:136] "GET /static/img/tiba.png HTTP/1.1" 304 0
+[08/Feb/2019 20:25:00] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 20:27:46] INFO [django.server:136] "GET /envolvidos/ HTTP/1.1" 200 15542
+[08/Feb/2019 20:27:46] INFO [django.server:136] "GET /static/img/Veracidade.png HTTP/1.1" 304 0
+[08/Feb/2019 20:27:46] INFO [django.server:136] "GET /static/img/Enactus.png HTTP/1.1" 304 0
+[08/Feb/2019 20:27:47] INFO [django.server:136] "GET /static/img/tiba.png HTTP/1.1" 304 0
+[08/Feb/2019 20:27:48] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 20:28:01] INFO [django.server:136] "GET /envolvidos/ HTTP/1.1" 200 15542
+[08/Feb/2019 20:28:02] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 20:29:09] INFO [django.server:136] "GET /envolvidos/ HTTP/1.1" 200 15542
+[08/Feb/2019 20:29:10] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 20:29:41] INFO [django.server:136] "GET /envolvidos/ HTTP/1.1" 200 15542
+[08/Feb/2019 20:29:41] INFO [django.server:136] "GET /static/img/Enactus.png HTTP/1.1" 304 0
+[08/Feb/2019 20:29:41] INFO [django.server:136] "GET /static/img/Veracidade.png HTTP/1.1" 304 0
+[08/Feb/2019 20:29:42] INFO [django.server:136] "GET /static/img/tiba.png HTTP/1.1" 304 0
+[08/Feb/2019 20:29:42] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 20:30:17] INFO [django.server:136] "GET /envolvidos/ HTTP/1.1" 200 15542
+[08/Feb/2019 20:30:18] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 20:36:12] INFO [django.server:136] "GET /pre_checkin/ HTTP/1.1" 200 8725
+[08/Feb/2019 20:36:12] INFO [django.server:136] "GET /static/img/calendar-icon.png HTTP/1.1" 200 15873
+[08/Feb/2019 20:36:12] INFO [django.server:136] "GET /static/img/sustentavel.png HTTP/1.1" 200 283400
+[08/Feb/2019 20:36:26] INFO [django.server:136] "GET /envolvidos/ HTTP/1.1" 200 15542
+[08/Feb/2019 20:36:26] INFO [django.server:136] "GET /static/img/Enactus.png HTTP/1.1" 304 0
+[08/Feb/2019 20:36:26] INFO [django.server:136] "GET /static/img/tiba.png HTTP/1.1" 304 0
+[08/Feb/2019 20:36:26] INFO [django.server:136] "GET /static/img/Veracidade.png HTTP/1.1" 304 0
