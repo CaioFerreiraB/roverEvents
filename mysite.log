@@ -220,3 +220,16 @@
 [08/Feb/2019 20:36:26] INFO [django.server:136] "GET /static/img/Enactus.png HTTP/1.1" 304 0
 [08/Feb/2019 20:36:26] INFO [django.server:136] "GET /static/img/tiba.png HTTP/1.1" 304 0
 [08/Feb/2019 20:36:26] INFO [django.server:136] "GET /static/img/Veracidade.png HTTP/1.1" 304 0
+[08/Feb/2019 20:43:15] INFO [django.server:136] "GET /envolvidos/ HTTP/1.1" 200 15785
+[08/Feb/2019 20:43:15] INFO [django.server:136] "GET /static/img/Enactus.png HTTP/1.1" 304 0
+[08/Feb/2019 20:43:16] INFO [django.server:136] "GET /static/img/Veracidade.png HTTP/1.1" 304 0
+[08/Feb/2019 20:43:18] INFO [django.server:136] "GET /static/img/tiba.png HTTP/1.1" 304 0
+[08/Feb/2019 20:43:20] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[08/Feb/2019 20:45:22] INFO [django.server:136] "GET /pre_checkin/ HTTP/1.1" 200 8724
+[08/Feb/2019 20:45:30] DEBUG [django.db.backends:111] (0.015) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[08/Feb/2019 20:45:30] INFO [django.server:136] "GET / HTTP/1.1" 200 15659
+[09/Feb/2019 00:07:08] DEBUG [django.db.backends:111] (0.004) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[09/Feb/2019 00:07:08] DEBUG [django.db.backends:111] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
