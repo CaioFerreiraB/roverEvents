@@ -233,3 +233,41 @@
             WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
             ORDER BY name; args=None
 [09/Feb/2019 00:07:08] DEBUG [django.db.backends:111] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[09/Feb/2019 00:08:09] DEBUG [django.db.backends:111] (0.051) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[09/Feb/2019 00:08:11] INFO [django.server:136] "GET / HTTP/1.1" 200 15659
+[09/Feb/2019 00:08:13] INFO [django.server:136] "GET /media/Logo_Bacury_Colorido.png HTTP/1.1" 304 0
+[09/Feb/2019 00:08:16] INFO [django.server:136] "GET /static/img/fav.png HTTP/1.1" 200 877
+[09/Feb/2019 00:08:20] INFO [django.server:136] "GET /envolvidos/ HTTP/1.1" 200 15702
+[09/Feb/2019 00:08:20] INFO [django.server:136] "GET /static/img/Enactus.png HTTP/1.1" 304 0
+[09/Feb/2019 00:08:20] INFO [django.server:136] "GET /static/img/GEISA.jpg HTTP/1.1" 200 1568347
+[09/Feb/2019 00:08:20] INFO [django.server:136] "GET /static/img/gu_ribeiro_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:20] INFO [django.server:136] "GET /static/img/tiba.png HTTP/1.1" 304 0
+[09/Feb/2019 00:08:20] INFO [django.server:136] "GET /static/img/casa_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:20] INFO [django.server:136] "GET /static/img/Veracidade.png HTTP/1.1" 304 0
+[09/Feb/2019 00:08:20] INFO [django.server:136] "GET /static/img/Andre_Luiz_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:20] INFO [django.server:136] "GET /static/img/artur_malheiros_corte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:20] INFO [django.server:136] "GET /static/img/Lucas_Teixeira_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:20] INFO [django.server:136] "GET /static/img/julia_rodrigues_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:20] INFO [django.server:136] "GET /static/img/pedro_henrique_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:20] INFO [django.server:136] "GET /static/img/pedrao_corte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:20] INFO [django.server:136] "GET /static/img/rafael_rezende_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:21] INFO [django.server:136] "GET /static/img/mari_fernandes_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:21] INFO [django.server:136] "GET /static/img/italo_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:21] INFO [django.server:136] "GET /static/img/pet_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:21] INFO [django.server:136] "GET /static/img/Ariane_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:22] INFO [django.server:136] "GET /static/img/kael_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:22] INFO [django.server:136] "GET /static/img/Anic_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:22] INFO [django.server:136] "GET /static/img/caio_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:22] INFO [django.server:136] "GET /static/img/Amanda_g_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:22] INFO [django.server:136] "GET /static/img/marcos_bertho_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:22] INFO [django.server:136] "GET /static/img/pedro_saletti_recorte.jpg HTTP/1.1" 200 82919
+[09/Feb/2019 00:08:23] INFO [django.server:136] "GET /static/img/Carol_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:23] INFO [django.server:136] "GET /static/img/vitor_monteiro_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:23] INFO [django.server:136] "GET /static/img/marcel_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:23] INFO [django.server:136] "GET /static/img/marli_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:08:23] INFO [django.server:136] "GET /static/img/Jose_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:11:51] DEBUG [django.db.backends:111] (0.007) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[09/Feb/2019 00:11:51] INFO [django.server:136] "GET / HTTP/1.1" 200 15659
+[09/Feb/2019 00:12:05] INFO [django.server:136] "GET /envolvidos/ HTTP/1.1" 200 15702
+[09/Feb/2019 00:12:06] INFO [django.server:136] "GET /static/img/pedro_saletti_recorte.jpg HTTP/1.1" 304 0
+[09/Feb/2019 00:12:26] INFO [django.server:136] "GET /pre_checkin/ HTTP/1.1" 200 8724
