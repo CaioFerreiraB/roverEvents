@@ -271,3 +271,5 @@
 [09/Feb/2019 00:12:05] INFO [django.server:136] "GET /envolvidos/ HTTP/1.1" 200 15702
 [09/Feb/2019 00:12:06] INFO [django.server:136] "GET /static/img/pedro_saletti_recorte.jpg HTTP/1.1" 304 0
 [09/Feb/2019 00:12:26] INFO [django.server:136] "GET /pre_checkin/ HTTP/1.1" 200 8724
+[09/Feb/2019 00:13:26] DEBUG [django.db.backends:111] (0.002) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[09/Feb/2019 00:13:26] INFO [django.server:136] "GET / HTTP/1.1" 200 15662
