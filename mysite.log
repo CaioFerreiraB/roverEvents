@@ -273,3 +273,29 @@
 [09/Feb/2019 00:12:26] INFO [django.server:136] "GET /pre_checkin/ HTTP/1.1" 200 8724
 [09/Feb/2019 00:13:26] DEBUG [django.db.backends:111] (0.002) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
 [09/Feb/2019 00:13:26] INFO [django.server:136] "GET / HTTP/1.1" 200 15662
+[11/Feb/2019 19:21:53] DEBUG [django.db.backends:111] (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[11/Feb/2019 19:21:53] DEBUG [django.db.backends:111] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[11/Feb/2019 19:22:49] DEBUG [django.db.backends:111] (0.000) SELECT "home_boletim"."numero", "home_boletim"."arquivo", "home_boletim"."capa", "home_boletim"."resumo" FROM "home_boletim"; args=()
+[11/Feb/2019 19:22:52] INFO [django.server:136] "GET / HTTP/1.1" 200 15658
+[11/Feb/2019 19:22:52] INFO [django.server:136] "GET /static/node_modules/bootstrap/compiler/bootstrap.css HTTP/1.1" 200 157083
+[11/Feb/2019 19:22:52] INFO [django.server:136] "GET /static/node_modules/bootstrap/compiler/bootstrap.css HTTP/1.1" 200 157083
+[11/Feb/2019 19:22:53] INFO [django.server:136] "GET /static/img/nome_branco.png HTTP/1.1" 200 1778
+[11/Feb/2019 19:22:53] INFO [django.server:136] "GET /static/node_modules/bootstrap/dist/js/bootstrap.js HTTP/1.1" 200 123765
+[11/Feb/2019 19:22:54] INFO [django.server:136] "GET /static/node_modules/popper.js/dist/umd/popper.js HTTP/1.1" 200 87009
+[11/Feb/2019 19:22:54] INFO [django.server:136] "GET /static/node_modules/jquery/dist/jquery.js HTTP/1.1" 200 271751
+[11/Feb/2019 19:22:55] INFO [django.server:136] "GET /static/img/Capa_Facebook_Evento_EcoCult.png HTTP/1.1" 200 150584
+[11/Feb/2019 19:22:55] INFO [django.server:136] "GET /static/img/gu.jpg HTTP/1.1" 200 67751
+[11/Feb/2019 19:22:55] INFO [django.server:136] "GET /static/img/organizacao.jpg HTTP/1.1" 200 131779
+[11/Feb/2019 19:22:56] INFO [django.server:136] "GET /media/Logo_Bacury_Colorido.png HTTP/1.1" 200 29447
+[11/Feb/2019 19:22:57] INFO [django.server:136] "GET /static/img/Logo_Completo_Cultive-se.png HTTP/1.1" 200 464052
+[11/Feb/2019 19:22:57] INFO [django.server:136] "GET /static/img/tiba.jpg HTTP/1.1" 200 71638
+[11/Feb/2019 19:22:57] INFO [django.server:136] "GET /static/img/santa_helena.jpg HTTP/1.1" 200 11361
+[11/Feb/2019 19:22:59] INFO [django.server:136] "GET /checkin/ HTTP/1.1" 200 10470
+[11/Feb/2019 19:22:59] INFO [django.server:136] "GET /static/img/logo_UEB.png HTTP/1.1" 200 23059
+[11/Feb/2019 19:22:59] INFO [django.server:136] "GET /static/node_modules/bootstrap/compiler/bootstrap.css HTTP/1.1" 200 157083
+[11/Feb/2019 19:22:59] INFO [django.server:136] "GET /static/img/invernada.jpg HTTP/1.1" 200 1515520
+[11/Feb/2019 19:22:59] INFO [django.server:136] "GET /static/node_modules/bs-custom-file-input/dist/bs-custom-file-input.js HTTP/1.1" 200 4932
+[11/Feb/2019 19:23:00] ERROR [django.server:136] "GET /static/img/invernada.jpg HTTP/1.1" 500 59
